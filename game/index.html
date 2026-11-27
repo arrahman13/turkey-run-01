@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash: Thanksgiving Escape</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2a1a0c;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    width: min(96vw, 960px);
+    height: auto;
+    image-rendering: auto;
+    border: 4px solid #5a3a1a;
+    border-radius: 8px;
+    background: #f7b267;
+    cursor: pointer;
+  }
+  #hint {
+    color: #ffe9a8;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+  <div id="hint">Arrows / WASD to run and jump &middot; Down to hide in a haystack &middot; Space or click to jump &middot; P to pause &middot; M to mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
